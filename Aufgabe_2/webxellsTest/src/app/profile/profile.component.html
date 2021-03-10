@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="navbar-left">
+    <div class="profile-info">
+      <div class="profile-img">
+        <i class="bi bi-person-fill"></i>
+      </div>
+      <span>Rebecca Sanders</span>
+      <span class="job-title">UX Designer</span>
+      <span>rebecca.s@webseite.de</span>
+      <span class="last-login">Last logged in: Today at 2.18pm</span>
+    </div>
+    <nav class="nav flex-column">
+      <a class="nav-link active" routerLink="/profile"><i class="bi bi-person-fill"></i> Profile</a>
+      <a class="nav-link" routerLink="/settings"><i class="bi bi-gear-fill"></i> Settings</a>
+      <a class="nav-link" routerLink="/billing"><i class="bi bi-credit-card-2-back"></i> Billing</a>
+      <a class="nav-link" routerLink="/messages"><i class="bi bi-envelope-fill"></i> Messages</a>
+      <a class="nav-link" routerLink="/drive"><i class="bi bi-grid-3x2-gap-fill"></i> Drive</a>
+      <a class="nav-link" routerLink="/reminders"><i class="bi bi-watch"></i> Reminders</a>
+    </nav>
+  </div>
+  <div class="content">
+    <h1 class="pro-headline">Profile</h1>
+    <form class="profile-form">
+      <legend>Personal Info</legend>
+      <div class="row mb-3">
+        <div for="user-img" class="col-sm-2 col-form-div">
+          <div class="profile-img">
+            <i class="bi bi-person-fill"></i>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div class="input-group">
+            <input type="file" class="form-control" id="user-img" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            <button class="btn btn-light" type="button" id="inputGroupFileAddon04">Update Image</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="user-name" class="col-sm-2 col-form-label">User Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="user-name" value="Rebecca">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="first-name" class="col-sm-2 col-form-label">First Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="first-name" value="Rebecca">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="last-name" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="last-name" value="Sanders">
+        </div>
+      </div>
+      <legend>Contact Info</legend>
+      <div class="row mb-3">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" value="rebecca@website.de">
+          <div id="emailHelp" class="form-text">This is the email</div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="twitter" class="col-sm-2 col-form-label">Twitter</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="twitter" value="SpeedyBecky">
+          <div id="emailHelp" class="form-text">Your twitter username</div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="likedin" class="col-sm-2 col-form-label">Likedin</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="likedin" value="https://www.linkedin.com/in/yourname">
+          <div id="emailHelp" class="form-text">eg. https://www.linkedin.com/in/yourname</div>
+        </div>
+      </div>
+      <hr>
+      <div class="row mb-3">
+        <div class="offset-md-2">
+          <button type="submit" class="btn btn-primary">Update Profile</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

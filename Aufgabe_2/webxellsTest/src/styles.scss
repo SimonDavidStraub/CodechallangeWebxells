@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+$primary: #9b45ad;
+
+.login-form {
+  margin-top: 100px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-left {
+  border-right: 1px solid #e2e2e2;
+  max-width: 212px;
+  padding: 20px;
+  float: left;
+  .profile-info {
+    text-align: center;
+    span {
+      display: block;
+    }
+    .job-title {
+      background-color: $primary;
+      color: white;
+      font-size: 12px;
+      display: inline-block;
+      border-radius: 5px;
+      padding: 0 5px;
+      margin-bottom: 10px;
+    }
+    .last-login {
+      color: grey;
+      margin: 10px 0;
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      background-color: #e8e8e8;
+      border-radius: 50%;
+      margin: 10px auto;
+      i {
+        font-size: 77px;
+      }
+    }
+  }
+  .nav {
+    margin-top: 50px;
+    .nav-link {
+      padding-left: 20px;
+      padding-right: 0;
+      margin-right: -20px;
+      margin-left: -20px;
+      color: grey;
+      border-bottom: 1px solid #e2e2e2;
+      &:hover, &.active {
+        color: $primary;
+        background-color: #f7f7f7;
+        border-right: 5px solid $primary;
+      }
+      &:first-child {
+        border-top: 1px solid #e2e2e2;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 20px 40px;
+  float: left;
+  width: calc(100% - 212px);
+  .pro-headline {
+    font-size: 20px;
+    &:after {
+      content: "PRO";
+      color: white;
+      background-color: #9b45ad;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-size: 14px;
+      margin-left: 10px;
+      vertical-align: text-top;
+    }
+  }
+  .profile-img {
+    width: 77px;
+    height: 77px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    float: right;
+    i {
+      font-size: 77px;
+      line-height: 1;
+    }
+  }
+  form.profile-form {
+    input[type="file"] {
+      border: none;
+      flex: none;
+      width: auto;
+      padding-left: 0;
+    }
+    .btn-primary {
+      background-color: $primary;
+      border-color: $primary;
+      margin-left: 15px;
+    }
+    label {
+      text-align: right;
+      font-weight: bold;
+    }
+    legend {
+      font-size: 18px;
+      margin: 25px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+    hr {
+      border-color: #e2e2e2;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    .form-text {
+      color: grey;
+      font-size: 16px;
+    }
+  }
+}
